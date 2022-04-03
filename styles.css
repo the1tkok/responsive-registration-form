@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+}
+
+/********** SIDE BAR DISPLAY ***********/
+
+.side-background-img {
+    display: flex;
+    background-color: black;
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.background-overlay {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    width: 100%;
+    height: 15%;
+    margin-top: 25vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.plant-img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.logo-img {
+    margin-left: 20%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-text {
+    color: white;
+    font-size: 4rem;
+    margin: auto auto auto 0%;
+}
+
+/********** REGISTRATION FORM ***********/
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+    justify-content: right;
+    background-color: rgb(233, 233, 233);
+    align-items: center;
+    margin-left: 30vw;
+}
+
+.desc-text {
+    color: black;
+    margin-top: 16.8vh;
+    margin-right: 25vw;
+    margin-left: 2rem;
+    margin-bottom: 5.3vh;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-title {
+    flex-basis: 100%;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.form-background {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin-top: 0.9vh;
+    box-shadow: 4px 4px 5px rgb(148, 148, 148);
+}
+
+.submit-btn, .account-already {
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.account-already {
+    padding-bottom: 1rem;
+}
+
+.submit-btn {
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: rgb(58, 83, 0);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(155, 155, 155);
+    cursor: pointer;
+}
+
+/********** ELEMENTS ***********/
+
+ul {
+    align-self: flex-start;
+}
+
+input, label {
+    display: block;
+    margin-left: 2rem;
+
+}
+
+label {
+    font-size: 0.65rem;
+    letter-spacing: 0.08rem;
+}
+
+input {
+    border-radius: 3.5px;
+    border: 1px solid rgb(226, 226, 226);
+    height: 25px;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0rem 0rem 0rem 0.3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(58, 83, 0);
+}
+
+/********** PSEUDO CONTENT/ELEMENTS **********/
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(62, 62, 255);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+/********** MEDIA QUERIES **********/
+
+@media (max-width: 926px) {
+    .form {
+        gap: 0rem;
+    }
+    .desc-text {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    }
+    .side-background-img {
+    width: 0vw;
+    transition-duration: 75ms;
+    }
+    .background-overlay {
+    width: 0vw;
+    transition: 70ms;
+    }
+    .registration-form {
+    margin-left: 0;
+    width: 100vw;
+    }
+
+}
+
+@media (max-width: 1156px) {
+     .logo-img {
+         margin-left: 10%;
+         transition-duration: 500ms;
+     }
+}
