@@ -1,7 +1,10 @@
 const backgroundImg = document.querySelector('.side-background-img')
-const img = document.createElement('img');
+const img = document.createElement('div');
 img.className = 'plant-img';
-img.src = 'plant-img.jpg';
+img.style.minWidth = '100%';
+img.style.minHeight = '100%';
+img.style.objectFit = 'cover';
+img.style.content = 'url(plant-img.jpg)';
 
 const backgroundOverlay = document.querySelector('.background-overlay');
 const imgOverlay = document.createElement('img');
