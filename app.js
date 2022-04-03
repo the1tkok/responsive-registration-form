@@ -21,4 +21,4 @@ function removeImg() {
         }
     }
 
-window.addEventListener('load', removeImg)
+window.addEventListener('DOMContentLoaded', removeImg)
